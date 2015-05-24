@@ -7,8 +7,7 @@ export default
 class <%= className %> {
     constructor() {
         this.register.attributes = {
-            name: '<%= pluginName %>',
-            version: '0.1.0'
+            pkg: require('./../../package.json')
         };
     }
 
